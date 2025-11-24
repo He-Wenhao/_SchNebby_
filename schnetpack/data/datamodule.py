@@ -9,7 +9,7 @@ import numpy as np
 import fasteners
 
 import pytorch_lightning as pl
-from pytorch_lightning.accelerators import GPUAccelerator
+from pytorch_lightning.accelerators import CUDAAccelerator as GPUAccelerator
 import torch
 
 from schnetpack.data import (

@@ -784,6 +784,9 @@ class NEB(DyNEB):
             allow_shared_calculator=allow_shared_calculator,
             precon=precon,
             **defaults)
+    def __ase_optimizable__(self):
+        """Return True to indicate this object can be optimized."""
+        return True
 
 
 class NEBOptimizer(Optimizer):

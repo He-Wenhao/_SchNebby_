@@ -1,3 +1,4 @@
+
 from ase.neb import NEB
 from ase import Atoms
 from geodesic_interpolate.interpolation import redistribute
